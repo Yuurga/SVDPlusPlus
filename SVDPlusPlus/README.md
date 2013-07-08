@@ -1,6 +1,6 @@
 # SVDPlusPlus
 
-TODO: Write a gem description
+Collaborative filtering alogorithm for recommendation systems
 
 ## Installation
 
