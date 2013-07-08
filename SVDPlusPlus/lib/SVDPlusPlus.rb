@@ -6,8 +6,6 @@ module SVDPlusPlus
   # Your code goes here...
   class SvdPlusPlus 
   
-  
-  
 	# Create a new SVD Matrix with m(Users) rows, n(goods,topics etc) columns, 
 	def initialize(m,n)
 		@m=m
@@ -38,12 +36,12 @@ module SVDPlusPlus
 	
 	#Multiplication of vectors v[a] *u[i]
 	def dot(v,u,a,i)
-    res = 0
-    for j in 0..1
-      res+=v[a,j]*u[i,j]
-    end
-    return res
-  end
+		res = 0
+		for j in 0..1
+			res+=v[a,j]*u[i,j]
+		end
+		return res
+	end
 	
   end
 end
