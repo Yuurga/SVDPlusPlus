@@ -143,7 +143,7 @@ module SVDPlusPlus
 	#return prediction for user i for all items
 	def get_prediction(i)
 		res=[]
-		for j in 0..9
+		for j in 0..@n-1
 			bu=@b_u_[i]
 			
 			bv=@b_v_[j]
