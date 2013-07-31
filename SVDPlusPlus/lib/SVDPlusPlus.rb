@@ -43,5 +43,19 @@ module SVDPlusPlus
 		return res
 	end
 	
+	#return eps between two vectors
+	def get_eps(new_v,old_v)
+		len=new_v.length
+		sum=0.0
+		mod_vector=0
+		for i in 0..len-1
+		  sum+= (new_v[i]-old_v[i]).abs
+		  mod_vector+= old_v[i]**2
+		end
+		mod_vector=Math.sqrt(mod_vector)
+		res = sum.to_d / mod_vector.to_d
+		return res
+	end
+	
   end
 end
