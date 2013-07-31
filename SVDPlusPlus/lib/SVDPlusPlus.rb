@@ -7,10 +7,10 @@ module SVDPlusPlus
   class SvdPlusPlus 
   
 	# Create a new SVD Matrix with m(Users) rows, n(goods,topics etc) columns, 
-	def initialize(m,n)
+	def initialize(m,n, tdm=nil)
 		@m=m
 		@n=n
-		@tdm=SVDMatrix.new(m,n) 
+		@tdm=SVDMatrix.new(m,n) if tdm==nil
 		
 		#Results of singular value decomposition of matrix tdm
 		@u=nil
